@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.159.14:3306/mybatis?useUnicode=true$characterEncoding=utf-8
+#整合mybatis
+mybatis:
+  #别名配置
+  type-aliases-package: com.pojo
+  #扫描的包
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#整合 mybatis
